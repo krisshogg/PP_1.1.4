@@ -9,7 +9,6 @@ public class Main {
     private final static UserService userService = new UserServiceImpl();
     public static void main(String[] args) {
         // реализуйте алгоритм здесь
-        //Util.getConnection();
 
         userService.createUsersTable();
 
@@ -18,7 +17,7 @@ public class Main {
         userService.saveUser("Никита", "Никитич", (byte) 33);
         userService.saveUser("Илья", "Ильич", (byte) 44);
 
-        userService.removeUserById(0);
+        userService.removeUserById(2);
 
         userService.getAllUsers();
 
